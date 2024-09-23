@@ -1,0 +1,23 @@
+var a [3]int
+var b [3]int{0, 0, 0}
+var c [...]{0, 0, 0} // sized by initializer
+
+var d [3]int
+d = b // elements are copied
+
+var m [...]int{1, 2, 3, 4}
+
+c = m // type mismatch, due to different sizes
+
+
+var a []int // nil, no storage
+var b []int{1, 2} // initialized
+
+a = append(a, 1) // append to nill OK
+b = append(b, 3) // []int{1, 2, 3}
+
+a = b  // overwrites a, now a points to where b is located in memory
+d := make([]int, 5) // []int{0, 0, 0, 0, 0}
+e := a // same storage (alias)
+
+e[0] == b[0] // true

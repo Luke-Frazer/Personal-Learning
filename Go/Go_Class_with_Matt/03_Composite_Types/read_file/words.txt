@@ -1,0 +1,3 @@
+there are some words in this file
+the words in this file will be counted
+lets see how the script reads this
