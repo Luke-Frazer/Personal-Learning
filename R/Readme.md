@@ -1,0 +1,2 @@
+# Overview
+While R is not a particularly important language for me to learn according to what my current career goals are, I wanted to get some basic insight into the language to expand my knowledge and think in a new way.
